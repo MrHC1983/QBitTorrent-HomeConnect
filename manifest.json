@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "QBitTorrent HomeConnect",
+  "version": "2026.9.1",
+  "description": "An independent Chromium extension for managing qBittorrent through its WebAPI.",
+  "minimum_chrome_version": "127",
+  "permissions": ["contextMenus", "storage", "tabs"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "QBitTorrent HomeConnect",
+    "default_popup": "index.html"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  }
+}
+
